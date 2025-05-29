@@ -1,0 +1,238 @@
+{
+  "templates": [
+    {
+      "id": "modern",
+      "name": "Modern Professional",
+      "description": "Clean and modern design perfect for tech and creative industries",
+      "theme": "modern",
+      "preview": "assets/images/modern-preview.jpg",
+      "sections": [
+        {
+          "id": "personal",
+          "name": "Personal Information",
+          "required": true,
+          "fields": [
+            {"name": "fullName", "label": "Full Name", "type": "text", "required": true, "placeholder": "John Doe"},
+            {"name": "email", "label": "Email", "type": "email", "required": true, "placeholder": "john@example.com"},
+            {"name": "phone", "label": "Phone", "type": "tel", "required": true, "placeholder": "(555) 123-4567"},
+            {"name": "location", "label": "Location", "type": "text", "required": false, "placeholder": "City, State"},
+            {"name": "website", "label": "Website/Portfolio", "type": "url", "required": false, "placeholder": "https://johndoe.com"},
+            {"name": "linkedin", "label": "LinkedIn", "type": "url", "required": false, "placeholder": "https://linkedin.com/in/johndoe"}
+          ]
+        },
+        {
+          "id": "summary",
+          "name": "Professional Summary",
+          "required": false,
+          "fields": [
+            {"name": "summary", "label": "Summary", "type": "textarea", "required": false, "placeholder": "Brief professional summary highlighting your key achievements and skills"}
+          ]
+        },
+        {
+          "id": "experience",
+          "name": "Work Experience",
+          "required": false,
+          "repeatable": true,
+          "fields": [
+            {"name": "jobTitle", "label": "Job Title", "type": "text", "required": true, "placeholder": "Software Engineer"},
+            {"name": "company", "label": "Company", "type": "text", "required": true, "placeholder": "Tech Corp"},
+            {"name": "location", "label": "Location", "type": "text", "required": false, "placeholder": "San Francisco, CA"},
+            {"name": "startDate", "label": "Start Date", "type": "month", "required": true},
+            {"name": "endDate", "label": "End Date", "type": "month", "required": false, "placeholder": "Leave blank if current"},
+            {"name": "current", "label": "Current Position", "type": "checkbox", "required": false},
+            {"name": "description", "label": "Job Description", "type": "textarea", "required": false, "placeholder": "• Developed and maintained web applications\n• Collaborated with cross-functional teams\n• Improved system performance by 25%"}
+          ]
+        },
+        {
+          "id": "education",
+          "name": "Education",
+          "required": false,
+          "repeatable": true,
+          "fields": [
+            {"name": "degree", "label": "Degree", "type": "text", "required": true, "placeholder": "Bachelor of Science in Computer Science"},
+            {"name": "school", "label": "School", "type": "text", "required": true, "placeholder": "University of Technology"},
+            {"name": "location", "label": "Location", "type": "text", "required": false, "placeholder": "Boston, MA"},
+            {"name": "graduationDate", "label": "Graduation Date", "type": "month", "required": false},
+            {"name": "gpa", "label": "GPA", "type": "text", "required": false, "placeholder": "3.8/4.0"},
+            {"name": "honors", "label": "Honors/Awards", "type": "text", "required": false, "placeholder": "Magna Cum Laude"}
+          ]
+        },
+        {
+          "id": "skills",
+          "name": "Skills",
+          "required": false,
+          "fields": [
+            {"name": "technical", "label": "Technical Skills", "type": "textarea", "required": false, "placeholder": "JavaScript, Python, React, Node.js, SQL"},
+            {"name": "soft", "label": "Soft Skills", "type": "textarea", "required": false, "placeholder": "Leadership, Communication, Problem Solving"}
+          ]
+        },
+        {
+          "id": "projects",
+          "name": "Projects",
+          "required": false,
+          "repeatable": true,
+          "fields": [
+            {"name": "name", "label": "Project Name", "type": "text", "required": true, "placeholder": "E-commerce Platform"},
+            {"name": "description", "label": "Description", "type": "textarea", "required": false, "placeholder": "Built a full-stack e-commerce platform using React and Node.js"},
+            {"name": "technologies", "label": "Technologies Used", "type": "text", "required": false, "placeholder": "React, Node.js, MongoDB"},
+            {"name": "url", "label": "Project URL", "type": "url", "required": false, "placeholder": "https://github.com/johndoe/project"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "classic",
+      "name": "Classic Professional",
+      "description": "Traditional format ideal for corporate and finance roles",
+      "theme": "classic",
+      "preview": "assets/images/classic-preview.jpg",
+      "sections": [
+        {
+          "id": "personal",
+          "name": "Personal Information",
+          "required": true,
+          "fields": [
+            {"name": "fullName", "label": "Full Name", "type": "text", "required": true, "placeholder": "John Doe"},
+            {"name": "email", "label": "Email", "type": "email", "required": true, "placeholder": "john@example.com"},
+            {"name": "phone", "label": "Phone", "type": "tel", "required": true, "placeholder": "(555) 123-4567"},
+            {"name": "location", "label": "Location", "type": "text", "required": false, "placeholder": "City, State"},
+            {"name": "linkedin", "label": "LinkedIn", "type": "url", "required": false, "placeholder": "https://linkedin.com/in/johndoe"}
+          ]
+        },
+        {
+          "id": "objective",
+          "name": "Objective",
+          "required": false,
+          "fields": [
+            {"name": "objective", "label": "Career Objective", "type": "textarea", "required": false, "placeholder": "Seeking a challenging position in finance where I can utilize my analytical skills"}
+          ]
+        },
+        {
+          "id": "experience",
+          "name": "Professional Experience",
+          "required": false,
+          "repeatable": true,
+          "fields": [
+            {"name": "jobTitle", "label": "Position", "type": "text", "required": true, "placeholder": "Financial Analyst"},
+            {"name": "company", "label": "Company", "type": "text", "required": true, "placeholder": "ABC Corporation"},
+            {"name": "location", "label": "Location", "type": "text", "required": false, "placeholder": "New York, NY"},
+            {"name": "startDate", "label": "Start Date", "type": "month", "required": true},
+            {"name": "endDate", "label": "End Date", "type": "month", "required": false},
+            {"name": "current", "label": "Current Position", "type": "checkbox", "required": false},
+            {"name": "description", "label": "Responsibilities", "type": "textarea", "required": false, "placeholder": "• Analyzed financial data and prepared reports\n• Assisted in budget planning and forecasting\n• Presented findings to senior management"}
+          ]
+        },
+        {
+          "id": "education",
+          "name": "Education",
+          "required": false,
+          "repeatable": true,
+          "fields": [
+            {"name": "degree", "label": "Degree", "type": "text", "required": true, "placeholder": "Bachelor of Business Administration"},
+            {"name": "school", "label": "Institution", "type": "text", "required": true, "placeholder": "State University"},
+            {"name": "location", "label": "Location", "type": "text", "required": false, "placeholder": "Chicago, IL"},
+            {"name": "graduationDate", "label": "Graduation Date", "type": "month", "required": false},
+            {"name": "gpa", "label": "GPA", "type": "text", "required": false, "placeholder": "3.7/4.0"}
+          ]
+        },
+        {
+          "id": "skills",
+          "name": "Core Competencies",
+          "required": false,
+          "fields": [
+            {"name": "skills", "label": "Skills", "type": "textarea", "required": false, "placeholder": "Financial Analysis, Excel, SQL, Presentation Skills"}
+          ]
+        },
+        {
+          "id": "certifications",
+          "name": "Certifications",
+          "required": false,
+          "repeatable": true,
+          "fields": [
+            {"name": "name", "label": "Certification", "type": "text", "required": true, "placeholder": "CFA Level I"},
+            {"name": "issuer", "label": "Issuing Organization", "type": "text", "required": true, "placeholder": "CFA Institute"},
+            {"name": "date", "label": "Date Obtained", "type": "month", "required": false}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creative",
+      "name": "Creative Portfolio",
+      "description": "Bold design perfect for designers, artists, and creative professionals",
+      "theme": "creative",
+      "preview": "assets/images/creative-preview.jpg",
+      "sections": [
+        {
+          "id": "personal",
+          "name": "Contact Info",
+          "required": true,
+          "fields": [
+            {"name": "fullName", "label": "Full Name", "type": "text", "required": true, "placeholder": "Jane Smith"},
+            {"name": "title", "label": "Professional Title", "type": "text", "required": false, "placeholder": "UX/UI Designer"},
+            {"name": "email", "label": "Email", "type": "email", "required": true, "placeholder": "jane@example.com"},
+            {"name": "phone", "label": "Phone", "type": "tel", "required": true, "placeholder": "(555) 123-4567"},
+            {"name": "location", "label": "Location", "type": "text", "required": false, "placeholder": "Los Angeles, CA"},
+            {"name": "portfolio", "label": "Portfolio Website", "type": "url", "required": false, "placeholder": "https://janesmith.design"},
+            {"name": "behance", "label": "Behance", "type": "url", "required": false, "placeholder": "https://behance.net/janesmith"},
+            {"name": "dribbble", "label": "Dribbble", "type": "url", "required": false, "placeholder": "https://dribbble.com/janesmith"}
+          ]
+        },
+        {
+          "id": "about",
+          "name": "About Me",
+          "required": false,
+          "fields": [
+            {"name": "about", "label": "About", "type": "textarea", "required": false, "placeholder": "Creative designer with 5+ years of experience in digital product design"}
+          ]
+        },
+        {
+          "id": "experience",
+          "name": "Experience",
+          "required": false,
+          "repeatable": true,
+          "fields": [
+            {"name": "jobTitle", "label": "Role", "type": "text", "required": true, "placeholder": "Senior UX Designer"},
+            {"name": "company", "label": "Company/Client", "type": "text", "required": true, "placeholder": "Design Studio Inc"},
+            {"name": "startDate", "label": "Start Date", "type": "month", "required": true},
+            {"name": "endDate", "label": "End Date", "type": "month", "required": false},
+            {"name": "current", "label": "Current Role", "type": "checkbox", "required": false},
+            {"name": "description", "label": "Key Achievements", "type": "textarea", "required": false, "placeholder": "• Led design for mobile app with 1M+ downloads\n• Improved user engagement by 40%\n• Mentored junior designers"}
+          ]
+        },
+        {
+          "id": "portfolio",
+          "name": "Featured Projects",
+          "required": false,
+          "repeatable": true,
+          "fields": [
+            {"name": "name", "label": "Project Name", "type": "text", "required": true, "placeholder": "Mobile Banking App"},
+            {"name": "role", "label": "Your Role", "type": "text", "required": false, "placeholder": "Lead UX Designer"},
+            {"name": "description", "label": "Description", "type": "textarea", "required": false, "placeholder": "Redesigned the mobile banking experience for 500K+ users"},
+            {"name": "url", "label": "Project URL", "type": "url", "required": false, "placeholder": "https://behance.net/gallery/project"}
+          ]
+        },
+        {
+          "id": "skills",
+          "name": "Skills & Tools",
+          "required": false,
+          "fields": [
+            {"name": "design", "label": "Design Skills", "type": "textarea", "required": false, "placeholder": "UI/UX Design, Prototyping, User Research, Visual Design"},
+            {"name": "tools", "label": "Tools & Software", "type": "textarea", "required": false, "placeholder": "Figma, Sketch, Adobe Creative Suite, Principle, InVision"}
+          ]
+        },
+        {
+          "id": "education",
+          "name": "Education",
+          "required": false,
+          "repeatable": true,
+          "fields": [
+            {"name": "degree", "label": "Degree", "type": "text", "required": true, "placeholder": "Bachelor of Fine Arts in Graphic Design"},
+            {"name": "school", "label": "School", "type": "text", "required": true, "placeholder": "Art Institute"},
+            {"name": "graduationDate", "label": "Graduation", "type": "month", "required": false}
+          ]
+        }
+      ]
+    }
+  ]
+}
