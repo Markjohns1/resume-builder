@@ -2,10 +2,10 @@
  * Resume Builder - Main Application
  * Coordinates all components and handles page-specific functionality
  */
-import { FormBuilder } from './core/FormBuilder.js';
-import { Resume } from './core/Resume.js';
-import { Storage } from './utils/storage.js';
-import { PDFGenerator } from './utils/pdf.js';
+import { FormBuilder } from '/resume-builder/FormBuilder.js';
+import { Resume } from '/resume-builder/Resume.js';
+import { Storage } from '/resume-builder/storage.js';
+import { PDFGenerator } from '/resume-builder/pdf.js';
 
 class ResumeBuilderApp {
     constructor() {
