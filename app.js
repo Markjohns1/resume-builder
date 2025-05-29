@@ -41,7 +41,7 @@ class ResumeBuilderApp {
      */
     async loadTemplates() {
         try {
-            const response = await fetch('data/templates.json');
+            const response = await fetch('/resume-builder/templates.json');
             if (!response.ok) {
                 throw new Error(`HTTP ${response.status}: ${response.statusText}`);
             }
